@@ -10,15 +10,6 @@ export default function AICreatorStudio() {
     setIsVisible(true);
   }, []);
 
-  // Auto-slide carousel
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % portfolioImages.length);
-    }, 3000); // Change image every 3 seconds
-
-    return () => clearInterval(interval);
-  }, []);
-
   // Sample images for carousel - replace with your actual work
   const portfolioImages = [
     {
@@ -245,11 +236,11 @@ export default function AICreatorStudio() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center max-w-2xl mx-auto">
             <div className="flex items-center space-x-3 bg-white/10 backdrop-blur-lg px-6 py-4 rounded-full">
               <Mail className="w-5 h-5" />
-              <a href="mailto:contact@digitalfluxmedia.com" className="hover:text-cyan-200 transition-colors">contact@digitalfluxmedia.com</a>
+              <a href="mailto:digitalfluxmedia.info@gmail.com" className="hover:text-cyan-200 transition-colors">contact@digitalfluxmedia.com</a>
             </div>
             <div className="flex items-center space-x-3 bg-white/10 backdrop-blur-lg px-6 py-4 rounded-full">
               <Phone className="w-5 h-5" />
-              <a href="tel:+1234567890" className="hover:text-cyan-200 transition-colors">+1 (234) 567-890</a>
+              <a href="tel:+1234567890" className="hover:text-cyan-200 transition-colors">+91-9873310479, +91-9899502959</a>
             </div>
           </div>
         </div>
